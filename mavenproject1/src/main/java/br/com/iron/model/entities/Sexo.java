@@ -25,7 +25,7 @@ public class Sexo implements Serializable{
     @Column(name="IdSexo",nullable = false)  
     private Integer idSexo;
     @Column(name = "Descricao",unique = true,nullable = false,length = 9)
-    private String descricao;
+    private String  descricao;
 
    //relacionamento 1 para muitos
     @OneToMany(mappedBy = "sexo",fetch = FetchType.LAZY)
